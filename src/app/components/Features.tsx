@@ -3,7 +3,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import image1 from "../../../public/asserts/project-5.jpg.png"
 import image2 from "../../../public/asserts/project-6.jpg.png"
 import image3 from "../../../public/asserts/Figure.png"
-import Image from 'next/image';
 
 export default function Features() {
   const [activeSlide, setActiveSlide] = useState(0);
