@@ -2,7 +2,7 @@
 
 export default function DemoVideo() {
   return (
-    <section className="py-20 bg-white flex flex-col items-center text-white">
+    <section className="py-20 bg-white flex flex-col items-center text-black">
       <h2 className="text-3xl font-bold mb-4">Step by Step guide</h2>
       <p className="text-lg text-gray-600 mb-10 max-w-2xl text-center">
         Easily create, deploy, and manage fine-tuned models and RAG pipelines using intuitive visual tools.

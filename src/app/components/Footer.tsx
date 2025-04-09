@@ -1,6 +1,8 @@
 // components/Footer.tsx
 import Image from 'next/image';
 import { FaFacebookF, FaPinterestP, FaTwitter, FaDribbble } from 'react-icons/fa';
+import trans from "../../../public/asserts/div.pattern-1.png"
+import bg from "../../../public/asserts/project-5.jpg.png"
 
 export default function Footer() {
   return (
@@ -8,7 +10,7 @@ export default function Footer() {
       {/* Circuit board background pattern */}
       <div className="absolute inset-0 z-0">
         <Image 
-          src="/api/placeholder/1920/400" 
+          src={trans} 
           alt="Circuit pattern background"
           layout="fill"
           objectFit="cover"
@@ -50,7 +52,7 @@ export default function Footer() {
               <a key={i} href="#" className="block hover:opacity-80 transition-opacity">
                 <div className="relative w-full aspect-square bg-blue-800 rounded-md overflow-hidden">
                   <Image 
-                    src={`/api/placeholder/120/120?text=${i+1}`}
+                    src={bg}
                     alt={`Portfolio item ${i+1}`}
                     layout="fill"
                     objectFit="cover"

@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import team1 from "../../../public/asserts/team1 (1).png";
-import team2 from "../../../public/asserts/team1 (2).png";
-import team3 from "../../../public/asserts/team1 (3).png";
+// import team1 from "../../../public/asserts/team1 (1).png";
+// import team2 from "../../../public/asserts/team1 (2).png";
+// import team3 from "../../../public/asserts/team1 (3).png";
 import team4 from "../../../public/asserts/team1 (4).png";
 
 export default function TeamSection() {
@@ -11,17 +11,17 @@ export default function TeamSection() {
     {
       name: "Cameron Williamson",
       role: "Founder & CEO",
-      image: team1,
+      image: team4,
     },
     {
       name: "Jacob Jones",
       role: "Product Manager",
-      image: team2,
+      image: team4
     },
     {
       name: "Esther Howards",
       role: "Marketing Head",
-      image: team3,
+      image: team4,
     },
     {
       name: "Robert Fox",

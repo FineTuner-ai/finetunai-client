@@ -24,7 +24,7 @@ export default function Navbar() {
         {/* CTA Button */}
         <div className="hidden md:block">
           <button className="bg-indigo-600 hover:bg-indigo-700 transition-colors px-10 py-2 rounded-4xl text-white text-sm font-medium shadow-sm">
-            Coming Soon
+            Coming 
           </button>
         </div>
 

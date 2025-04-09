@@ -2,7 +2,8 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-import bg from "../../../public/asserts/heroImage.png"
+import trans from "../../../public/asserts/div.pattern-1.png"
+import team1 from "../../../public/asserts/team1 (1).png"
 
 
 export default function Testimonial() {
@@ -13,13 +14,13 @@ export default function Testimonial() {
       quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
       author: "Moris Jacker",
       position: "Web Developer",
-      avatar: "/api/placeholder/80/80" // Placeholder for demo
+      avatar: team1 // Placeholder for demo
     },
     {
       quote: "FinetunerAI changed the way we deploy machine learning models. We now focus more on our product than infrastructure.",
       author: "Alex Doe",
       position: "CTO at Startup",
-      avatar: "/api/placeholder/80/80" // Placeholder for demo
+      avatar: team1 // Placeholder for demo
     }
   ];
 
@@ -28,7 +29,7 @@ export default function Testimonial() {
       {/* Professional background with overlay */}
       <div className="absolute inset-0 opacity-20">
         <Image 
-          src="/api/placeholder/1920/1080" 
+          src= {trans}
           alt="Professional background"
           layout="fill"
           objectFit="cover"

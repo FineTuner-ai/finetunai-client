@@ -107,7 +107,7 @@ export default function Features() {
                         <img 
                           src={feature.image.src} 
                           alt={feature.title} 
-                          className="h-full w-full object-cover absolute inset-0 mix-blend-overlay"
+                          className="h-full w-full object-cover absolute inset-0"
                         />
                         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-30"></div>
                       </div>

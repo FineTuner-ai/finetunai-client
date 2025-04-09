@@ -2,10 +2,10 @@
 
 export default function NoCodeSection() {
   return (
-    <section className="bg-gray-50 text-gray-600 py-20 px-4">
+    <section className="bg-gray-50  text-gray-600 py-20 px-4">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
         {/* Left: Text */}
-        <div className="max-w-xl text-left">
+        <div className="max-w-xl ml-20 text-left">
           <h2 className="text-3xl md:text-4xl text-gray-600 font-bold leading-tight mb-4">
             Be the First to Build Smarter <br />
             <span className=" text-gray-600">AI No Code Needed</span>
@@ -23,7 +23,7 @@ export default function NoCodeSection() {
         </div>
 
         {/* Right: Form */}
-        <form className="w-full max-w-md bg-transparent space-y-4">
+        <form className="w-full border-blue-400 mr-10 max-w-md bg-transparent space-y-4">
           <input
             type="text"
             placeholder="Name"
@@ -39,9 +39,9 @@ export default function NoCodeSection() {
             rows={4}
             className="w-full px-5 py-3 rounded-lg bg-white text-black placeholder-gray-500 outline-none focus:ring-2 focus:ring-blue-500"
           />
-          <button
+         <button
             type="submit"
-            className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-full transition"
+            className="bg-blue-500 text-white px-4 py-3 rounded-full hover:bg-blue-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
             Join the Wishlist
           </button>
