@@ -1,16 +1,52 @@
-// components/NoCodeSection.tsx
+'use client';
+
 export default function NoCodeSection() {
-    return (
-      <section className="bg-gray-50 py-16 text-center">
-        <h2 className="text-2xl font-bold mb-4">Be the First to Build Smarter AI — No Code Needed</h2>
-        <p className="mb-8">Sign up to get notified when we launch. No spam, we promise!</p>
-        <form className="max-w-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
-          <input type="text" placeholder="Name" className="border px-4 py-2 rounded-md" />
-          <input type="email" placeholder="Email" className="border px-4 py-2 rounded-md" />
-          <button type="submit" className="bg-blue-600 text-white px-6 py-2 rounded-md">
-            Notify Me
+  return (
+    <section className="bg-gray-50 text-gray-600 py-20 px-4">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+        {/* Left: Text */}
+        <div className="max-w-xl text-left">
+          <h2 className="text-3xl md:text-4xl text-gray-600 font-bold leading-tight mb-4">
+            Be the First to Build Smarter <br />
+            <span className=" text-gray-600">AI No Code Needed</span>
+          </h2>
+          <p className="text-gray-700 mb-6">
+            We’re launching soon. Join our early access list and get notified the moment we go live.
+          </p>
+          <ul className="text-gray-700 space-y-3 font-medium">
+            <li>• Drag-and-Drop Workflow Builder</li>
+            <li>• Visual Prompt Engineering Studio</li>
+            <li>• Model Training and Monitoring</li>
+            <li>• Document Management with Search & Tagging</li>
+            <li>• Real-time Chat Testing Interface</li>
+          </ul>
+        </div>
+
+        {/* Right: Form */}
+        <form className="w-full max-w-md bg-transparent space-y-4">
+          <input
+            type="text"
+            placeholder="Name"
+            className="w-full px-5 py-3 rounded-lg bg-white text-black placeholder-gray-500 outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            className="w-full px-5 py-3 rounded-lg bg-white text-black placeholder-gray-500 outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <textarea
+            placeholder="Message"
+            rows={4}
+            className="w-full px-5 py-3 rounded-lg bg-white text-black placeholder-gray-500 outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <button
+            type="submit"
+            className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-full transition"
+          >
+            Join the Wishlist
           </button>
         </form>
-      </section>
-    );
-  }
+      </div>
+    </section>
+  );
+}

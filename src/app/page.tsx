@@ -6,6 +6,7 @@ import Features from "./components/Features";
 import TeamSection from "./components/TeamSection";
 import FAQSection from "./components/FAQSection";
 import Txt from "./components/Txt";
+import ContactForm from "./components/Contact"
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <NoCodeSection />
       <Features />
       <TeamSection />
+      <ContactForm />
       <Txt />
       <FAQSection />
       
