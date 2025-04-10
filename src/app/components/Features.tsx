@@ -108,21 +108,21 @@ export default function Features() {
   return (
     <section
       id="features"
-      className="max-w-6xl mx-auto py-16 px-4 overflow-hidden"
+      className="max-w-6xl mx-auto py-8 sm:py-12 md:py-16 px-4 overflow-hidden"
     >
-      <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold mb-2">FEATURES</h2>
-        <h1 className="text-4xl font-bold mb-4">
+      <div className="text-center mb-6 md:mb-8">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-1 md:mb-2">FEATURES</h2>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 px-2">
           A No-Code Platform Designed for AI Builders
         </h1>
-        <p className="text-gray-600 max-w-2xl mx-auto">
+        <p className="text-gray-600 text-sm md:text-base max-w-2xl mx-auto px-4">
           Easily create, deploy, and manage fine-tuned models and RAG pipelines
           using intuitive visual tools.
         </p>
       </div>
 
       {/* Carousel Container */}
-      <div className="relative mt-12 overflow-hidden">
+      <div className="relative mt-8 md:mt-12 overflow-hidden">
         {/* Slides wrapper */}
         <div
           ref={carouselRef}
@@ -132,19 +132,24 @@ export default function Features() {
           style={{ transform: `translateX(-${activeSlide * 100}%)` }}
         >
           {features.map((feature, index) => (
-            <div key={index} className="min-w-full px-4">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {/* Feature Cards - We'll show 3 per slide */}
+            <div key={index} className="min-w-full px-1 sm:px-2 md:px-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
+                {/* Feature Cards - We'll show 1 on mobile, 2 on tablet, 3 on desktop per slide */}
                 {[0, 1, 2].map((offset) => {
                   const featureIndex = (index + offset) % features.length;
                   const feature = features[featureIndex];
+                  
+                  // Hide the third card on small screens, second card on extra small screens
+                  const visibilityClass = 
+                    offset === 2 ? "hidden md:block" : 
+                    offset === 1 ? "hidden sm:block" : "";
 
                   return (
                     <div
                       key={featureIndex}
-                      className="bg-white rounded-lg overflow-hidden shadow-lg"
+                      className={`${visibilityClass} bg-white rounded-lg overflow-hidden shadow-lg`}
                     >
-                      <div className="h-64 flex items-center justify-center p-4 relative bg-gradient-to-br from-purple-900 to-blue-800">
+                      <div className="h-48 sm:h-56 md:h-64 flex items-center justify-center p-2 md:p-4 relative bg-gradient-to-br from-purple-900 to-blue-800">
                         {/* Use the imported image instead of a placeholder */}
                         <img
                           src={feature.image.src}
@@ -153,30 +158,30 @@ export default function Features() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-30"></div>
                       </div>
-                      <div className="p-6 text-center">
-                        <div className="relative -mt-12 mb-4">
-                          <div className="bg-white rounded-full w-16 h-16 mx-auto flex items-center justify-center border-4 border-white shadow-md">
+                      <div className="p-4 md:p-6 text-center">
+                        <div className="relative -mt-12 mb-3 md:mb-4">
+                          <div className="bg-white rounded-full w-12 h-12 md:w-16 md:h-16 mx-auto flex items-center justify-center border-4 border-white shadow-md">
                             <div
-                              className={`${feature.iconColor} font-bold text-xl`}
+                              className={`${feature.iconColor} font-bold text-lg md:text-xl`}
                             >
                               <svg
                                 viewBox="0 0 24 24"
-                                width="32"
-                                height="32"
-                                className="mx-auto"
+                                width="24"
+                                height="24"
+                                className="mx-auto md:w-8 md:h-8"
                               >
                                 <path fill="currentColor" d={feature.icon} />
                               </svg>
                             </div>
                           </div>
                         </div>
-                        <h3 className="text-xl font-bold mb-2">
+                        <h3 className="text-lg sm:text-xl font-bold mb-2">
                           {feature.title}
                         </h3>
-                        <p className="text-gray-600 mb-4">
+                        <p className="text-gray-600 text-sm md:text-base mb-3 md:mb-4">
                           {feature.description}
                         </p>
-                        <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full">
+                        <button className="bg-blue-600 hover:bg-blue-700 text-white text-sm md:text-base font-medium py-1.5 px-4 md:py-2 md:px-6 rounded-full">
                           Read More
                         </button>
                       </div>
@@ -190,14 +195,14 @@ export default function Features() {
       </div>
 
       {/* Navigation Dots */}
-      <div className="flex justify-center mt-12 space-x-2">
+      <div className="flex justify-center mt-6 sm:mt-8 md:mt-12 space-x-2">
         {Array.from({ length: totalSlides }).map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
             className={`transition-all ${
               activeSlide % totalSlides === index
-                ? "w-8 h-2 bg-cyan-400"
+                ? "w-6 md:w-8 h-2 bg-cyan-400"
                 : "w-2 h-2 bg-blue-900"
             } rounded-full`}
             aria-label={`Go to slide ${index + 1}`}
