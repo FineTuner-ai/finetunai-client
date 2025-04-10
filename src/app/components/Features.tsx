@@ -72,7 +72,7 @@ export default function Features() {
   };
 
   return (
-    <section className="max-w-6xl mx-auto py-16 px-4 overflow-hidden">
+    <section id='features' className="max-w-6xl mx-auto py-16 px-4 overflow-hidden">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold mb-2">FEATURES</h2>
         <h1 className="text-4xl font-bold mb-4">A No-Code Platform Designed for AI Builders</h1>

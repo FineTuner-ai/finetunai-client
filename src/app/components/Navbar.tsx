@@ -1,6 +1,7 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,22 +11,43 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold text-indigo-700 tracking-tight">
-          FINETUN<span className="text-gray-900">ai</span>
+          <Link href="/" className="cursor-pointer">
+            FINETUN<span className="text-gray-900">ai</span>
+          </Link>
         </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 text-lg font-medium text-gray-700">
-          <li><a href="#features" className="hover:text-indigo-600 transition">Features</a></li>
-          <li><a href="#team" className="hover:text-indigo-600 transition">Team</a></li>
-          <li><a href="#faq" className="hover:text-indigo-600 transition">FAQs</a></li>
-          <li><a href="#contact" className="hover:text-indigo-600 transition">Contact</a></li>
+          <li>
+            <a href="#features" className="hover:text-indigo-600 transition">
+              Features
+            </a>
+          </li>
+          <li>
+            <a href="#team" className="hover:text-indigo-600 transition">
+              Team
+            </a>
+          </li>
+          <li>
+            <a href="#faqs" className="hover:text-indigo-600 transition">
+              FAQs
+            </a>
+          </li>
+          <li>
+            <a href="#contact" className="hover:text-indigo-600 transition">
+              Contact
+            </a>
+          </li>
         </ul>
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <button className="bg-indigo-600 hover:bg-indigo-700 transition-colors px-10 py-2 rounded-4xl text-white text-sm font-medium shadow-sm">
-            Coming 
+            <Link href= "#wishlist">
+            <button className="bg-indigo-600 hover:bg-indigo-700 transition-colors px-10 py-2 rounded-4xl text-white text-sm font-medium shadow-sm">
+            Coming Soon
           </button>
+            </Link>
+          
         </div>
 
         {/* Hamburger Menu Icon */}
@@ -63,10 +85,26 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden px-6 pb-4">
           <ul className="space-y-4 text-sm font-medium  text-gray-700">
-            <li><a href="#features" className="block hover:text-indigo-600">Features</a></li>
-            <li><a href="#team" className="block hover:text-indigo-600">Team</a></li>
-            <li><a href="#faq" className="block hover:text-indigo-600">FAQs</a></li>
-            <li><a href="#contact" className="block hover:text-indigo-600">Contact</a></li>
+            <li>
+              <a href="#features" className="block hover:text-indigo-600">
+                Features
+              </a>
+            </li>
+            <li>
+              <a href="#team" className="block hover:text-indigo-600">
+                Team
+              </a>
+            </li>
+            <li>
+              <a href="#faqs" className="block hover:text-indigo-600">
+                FAQs
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="block hover:text-indigo-600">
+                Contact
+              </a>
+            </li>
             <li>
               <button className="w-full bg-indigo-600 hover:bg-indigo-700 transition-colors px-4 py-2 rounded-md text-white text-sm font-medium shadow">
                 Join Beta

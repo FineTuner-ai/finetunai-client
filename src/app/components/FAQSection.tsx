@@ -3,7 +3,7 @@ import bgImage from "../../../public/asserts/div.bg-layer.png";
 
 export default function FAQSection() {
   return (
-    <section className="relative flex py-16 bg-gradient-to-br from-blue-900 to-blue-950 overflow-hidden px-6">
+    <section id="faqs" className="relative flex py-16 bg-gradient-to-br from-blue-900 to-blue-950 overflow-hidden px-6">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image 
@@ -30,7 +30,7 @@ export default function FAQSection() {
               "What if I don't know how to code or use ML?",
             ].map((q, i) => (
               <details key={i} className="border border-blue-400 bg-blue-900 bg-opacity-50 backdrop-blur-sm rounded-md p-4 text-white">
-                <summary className="font-semibold cursor-pointer flex justify-between items-center">
+                <summary className="font-semibold cursor-pointer flex justify-between items-start">
                   {q}
                   <div className="h-5 w-5 text-blue-300">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -48,7 +48,7 @@ export default function FAQSection() {
       {/* Decorative Elements - Data Visualization Cylinder */}
       <div className="absolute left-1/4 top-1/2 transform -translate-y-1/2 z-5 opacity-80">
         <div className="w-64 h-64 rounded-full border border-blue-400 bg-blue-800 bg-opacity-20 flex items-center justify-center relative overflow-hidden">
-          <div className="absolute inset-x-0 h-full flex items-center justify-around">
+          <div className="absolute inset-x-0 h-full flex items-start justify-around">
             {[...Array(12)].map((_, i) => (
               <div 
                 key={i} 

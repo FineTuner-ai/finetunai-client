@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function ContactForm() {
   return (
-    <div className="max-w-3xl mx-auto py-12 px-4">
+    <div id="contact" className="max-w-3xl mx-auto  py-12 px-4">
       <h2 className="text-3xl font-bold text-center mb-2">Having any doubt in mind ?</h2>
       
       <div className="flex justify-center items-center mb-4">

@@ -2,7 +2,7 @@
 
 export default function NoCodeSection() {
   return (
-    <section className="bg-gray-50  text-gray-600 py-20 px-4">
+    <section id="wishlist" className="bg-gray-50  text-gray-600 py-20 px-4">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
         {/* Left: Text */}
         <div className="max-w-xl ml-20 text-left">

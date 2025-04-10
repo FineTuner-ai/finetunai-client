@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import heroImage from "../../../public/asserts/heroImage.png";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -33,13 +34,19 @@ export default function HeroSection() {
           </p>
 
           <div className="flex flex-wrap gap-4">
+          <Link href = "#faqs">
             <button className="bg-white border border-indigo-600 text-indigo-600 hover:bg-indigo-50 hover:text-indigo-700 transition-all duration-200 px-6 py-3 rounded-4xl font-semibold shadow-sm">
               Learn More
             </button>
-
-            <button className="bg-indigo-600 text-white hover:bg-indigo-700 transition-all duration-200 px-6 py-3 rounded-4xl font-semibold shadow-sm">
+            </Link>
+            <Link href = "#wishlist">
+            <button  className="bg-indigo-600 text-white hover:bg-indigo-700 transition-all duration-200 px-6 py-3 rounded-4xl font-semibold shadow-sm">
               Join Wishlist
             </button>
+            
+            </Link>
+
+            
           </div>
         </div>
       </div>

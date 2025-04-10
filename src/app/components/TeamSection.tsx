@@ -31,7 +31,7 @@ export default function TeamSection() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section id="team" className="py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto text-center mb-5 px-4">
         <h2 className="text-3xl font-bold mb-12 text-center">Our Team</h2>
         <p className="pb-10">
