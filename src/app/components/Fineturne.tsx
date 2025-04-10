@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 
 const Finetune = () => {
   return (
@@ -13,7 +12,7 @@ const Finetune = () => {
           </h1>
           <p className="text-lg text-white/90 max-w-lg">
             Transform open source models into specialized AI solutions with
-            Finetunai Studio's comprehensive fine-tuning platform. Access
+            Finetunai Studios comprehensive fine-tuning platform. Access
             leading models, powerful infrastructure, and transparent pricing.
           </p>
           <div className="pt-4">
