@@ -3,11 +3,11 @@ import React from "react";
 
 const Finetune = () => {
   return (
-    <div className="max-w-300 bg-gradient-to-r h-100 mx-auto px-4 sm:px-6 lg:px-8 from-blue-950 to-blue-900 rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl overflow-hidden">
+    <div className="max-w-300 bg-gradient-to-r h-80 mx-auto px-4 sm:px-6 lg:px-8 from-blue-950 to-blue-900 rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl overflow-hidden">
       <div className="max-w-7xl mx-auto py-8 sm:py-12 md:py-5 flex flex-col md:flex-row items-center justify-between">
         {/* Left content section */}
-        <div className="w-full md:w-1/2 space-y-4 sm:space-y-5 md:space-y-6 z-10 text-center md:text-left">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
+        <div className="w-full md:w-1/2 space-y-4 sm:space-y-5 md:space-y-3 z-10 text-center md:text-left">
+          <h1 className="text-3xl sm:text-4xl md:text-3xl font-bold text-white leading-tight">
             Fine-tune AI models at scale
           </h1>
           <p className="text-base sm:text-lg text-white/90 max-w-lg mx-auto md:mx-0">
