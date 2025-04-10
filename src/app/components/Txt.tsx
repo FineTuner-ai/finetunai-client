@@ -11,23 +11,23 @@ export default function Testimonial() {
   const testimonials = [
     {
       quote:
-        "As someone leading AI projects without a deep coding background, this platform has been a game changer. I was able to fine-tune models on custom datasets and build a RAG pipeline—all using a drag-and-drop canvas! The real-time prompt testing and model comparison tools gave us insights we couldn't get anywhere else.",
+        "As someone leading AI projects without a deep coding background, this platform has been a game changer. I was able to fine-tune models on custom datasets and build a RAG pipeline&mdash;all using a drag-and-drop canvas! The real-time prompt testing and model comparison tools gave us insights we couldn&rsquo;t get anywhere else.",
       author: "Moris Jacker",
       position: "Web Developer",
-      avatar: team1, // Placeholder for demo
+      avatar: team1,
     },
     {
       quote:
         "FinetunerAI changed the way we deploy machine learning models. We now focus more on our product than infrastructure.",
       author: "Alex Doe",
       position: "CTO at Startup",
-      avatar: team1, // Placeholder for demo
+      avatar: team1,
     },
   ];
 
   return (
     <section className="relative bg-blue-950 text-white py-24 px-6 overflow-hidden">
-      {/* Professional background with overlay */}
+      {/* Background pattern */}
       <div className="absolute inset-0 opacity-20">
         <Image
           src={trans}
@@ -40,26 +40,17 @@ export default function Testimonial() {
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto text-center">
-        {/* Refined heading with highlighted "Clients" */}
         <h2 className="text-4xl font-bold mb-6 tracking-tight">
           What Our <span className="text-blue-400">Clients</span> Say
         </h2>
 
-        {/* Professionally styled subtitle paragraph */}
         <p className="max-w-2xl mx-auto text-center text-gray-300 mb-10 leading-relaxed">
-          As someone leading AI projects without a deep coding background, this
-          platform has been a game changer. I was able to fine-tune models on
-          custom datasets and build a RAG pipeline—all using a drag-and-drop
-          canvas! The real-time prompt testing and model comparison tools gave
-          us insights we couldn't get anywhere else."
+          {testimonials[activeIndex].quote}
         </p>
 
-        {/* Enhanced divider line */}
         <div className="w-20 h-1 bg-blue-400 mx-auto mb-16"></div>
 
-        {/* Testimonial content with improved spacing */}
         <div className="mt-8">
-          {/* Professional avatar presentation */}
           <div className="flex justify-center mb-10">
             <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-blue-400 shadow-lg">
               <Image
@@ -72,15 +63,12 @@ export default function Testimonial() {
             </div>
           </div>
 
-          {/* Enhanced quote styling */}
           <blockquote className="max-w-2xl mx-auto text-lg italic text-gray-300 mb-10 leading-relaxed">
             {testimonials[activeIndex].quote}
           </blockquote>
 
-          {/* Refined vertical line */}
           <div className="w-0.5 h-12 bg-blue-500 mx-auto mb-6"></div>
 
-          {/* Professional author presentation */}
           <div className="mb-10 text-center">
             <p className="font-bold text-2xl mb-1">
               {testimonials[activeIndex].author}
@@ -90,7 +78,6 @@ export default function Testimonial() {
             </p>
           </div>
 
-          {/* Enhanced navigation controls */}
           <div className="flex justify-center space-x-3">
             {testimonials.map((_, index) => (
               <button
