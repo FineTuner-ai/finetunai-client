@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 export default function NoCodeSection() {
   return (
@@ -11,7 +11,7 @@ export default function NoCodeSection() {
             <span className="text-black">AI No Code Needed</span>
           </h2>
           <p className="text-black mb-4 md:mb-6 text-sm sm:text-base">
-            We're launching soon. Join our early access list and get notified the moment we go live.
+            We&apos;re launching soon. Join our early access list and get notified the moment we go live.
           </p>
           <ul className="text-gray-700 space-y-2 md:space-y-3 font-medium text-sm sm:text-base mx-auto md:mx-0 max-w-md text-left">
             <li>• Drag-and-Drop Workflow Builder</li>
