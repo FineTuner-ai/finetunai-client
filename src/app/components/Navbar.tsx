@@ -20,24 +20,31 @@ export default function Navbar() {
         <ul className="hidden md:flex space-x-8 text-lg font-medium text-gray-700">
           <li>
             <a href="#features" className="hover:text-indigo-600 transition">
-              Features
+            AI Studio
             </a>
           </li>
           <li>
             <a href="#team" className="hover:text-indigo-600 transition">
-              Team
+            AI Cloud
             </a>
           </li>
           <li>
             <a href="#faqs" className="hover:text-indigo-600 transition">
-              FAQs
+            Why Finetunai
             </a>
           </li>
           <li>
             <a href="#contact" className="hover:text-indigo-600 transition">
-              Contact
+            Resources
             </a>
           </li>
+          <li>
+            <a href="#contact" className="hover:text-indigo-600 transition">
+            Docs
+            </a>
+          </li>
+          
+          
         </ul>
 
         {/* CTA Button */}

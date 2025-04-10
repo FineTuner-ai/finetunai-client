@@ -20,10 +20,10 @@ export default function HeroSection() {
       </div>
 
       {/* Optional overlay */}
-      <div className="absolute inset-0 bg-blue opacity-40 z-10" />
+      <div className="absolute inset-0 bg-black opacity-30 z-10" />
 
       {/* Text Content */}
-      <div className="relative z-20 h-full w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex flex-col justify-center">
+      <div className="relative z-20 h-full w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col justify-center">
         <div className="max-w-2xl text-white">
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold font-epilogue leading-snug sm:leading-tight mb-4">
             Build Powerful AI Applications Without Writing a Single Line of Code
