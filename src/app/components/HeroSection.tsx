@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[80vh] sm:min-h-[90vh] md:min-h-screen bg-pink-500 w-full overflow-hidden">
+    <section className="relative min-h-[80vh] sm:min-h-[90vh] md:min-h-screen bg-indigo-600 w-full overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -30,7 +30,8 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-sm sm:text-base md:text-lg lg:text-xl font-medium text-[#e3e2e2] leading-relaxed mb-4 md:mb-6">
-            Empower your team to fine-tune LLMs and build Retrieval-Augmented Generation workflows — no programming required.
+            Empower your team to fine-tune LLMs and build Retrieval-Augmented
+            Generation workflows no programming required.
           </p>
 
           <div className="flex flex-wrap gap-3 sm:gap-4">

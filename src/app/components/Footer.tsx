@@ -88,11 +88,11 @@ export default function Footer() {
             </div>
             <div>
               <h5 className="text-blue-400 font-medium mb-1">Phone</h5>
-              <p className="text-gray-300">+1 (800) 555-2456</p>
+              <p className="text-gray-300">+233 55 415 1600</p>
             </div>
             <div>
               <h5 className="text-blue-400 font-medium mb-1">Email</h5>
-              <p className="text-gray-300">hello@finetunerai.com</p>
+              <p className="text-gray-300">info@finetunai.com</p>
             </div>
           </div>
         </div>

@@ -1,8 +1,8 @@
 "use client";
 
-export default function NoCodeSection() {
+export default function WhishList() {
   return (
-    <section id="wishlist" className="bg-gray-50 text-black py-12 sm:py-16 md:py-20 px-4">
+    <section id="wishlist" className="bg-gray-100 text-black py-12 sm:py-16 md:py-20 px-4">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
         {/* Left: Text */}
         <div className="w-full max-w-xl mx-auto md:mx-0 md:ml-4 lg:ml-20 text-center md:text-left">
