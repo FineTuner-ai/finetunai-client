@@ -3,7 +3,7 @@ import React from "react";
 
 const Finetune = () => {
   return (
-    <div className="max-w-300 bg-gradient-to-r mt-20 mb-10 h-80 mx-auto px-4 sm:px-6 lg:px-8 from-blue-950 to-blue-900 rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl overflow-hidden">
+    <div className="max-w-300 bg-gradient-to-r mt-20 mb-10 h-80 mx-auto px-4 sm:px-6 lg:px-8 from-indigo-900 to-blue-900 rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl overflow-hidden">
       <div className="max-w-7xl mx-auto py-8 sm:py-12 md:py-5 flex flex-col md:flex-row items-center justify-between">
         {/* Left content section */}
         <div className="w-full md:w-1/2 space-y-4 sm:space-y-5 md:space-y-3 z-10 text-center md:text-left">
@@ -16,7 +16,7 @@ const Finetune = () => {
             leading models, powerful infrastructure, and transparent pricing.
           </p>
           <div className="pt-2 sm:pt-4">
-            <button className="bg-white text-blue-900 font-medium px-6 sm:px-8 py-2 sm:py-3 rounded-full hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-indigo-900 font-medium px-6 sm:px-8 py-2 sm:py-3 rounded-full hover:bg-gray-100 transition-colors">
               Start fine-tuning
             </button>
           </div>
