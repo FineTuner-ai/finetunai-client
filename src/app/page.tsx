@@ -6,7 +6,7 @@ import Features from "./components/Features";
 import Partners from "./components/Partners";
 // import FAQSection from "./components/FAQSection";
 // import Testimonials from "./components/Testimonials";
-import ContactForm from "./components/Contact"
+// import ContactForm from "./components/Contact"
 import Finetune from "./components/Fineturne";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
       <WhishList />
       <Features />
       
-      <ContactForm />
+      {/* <ContactForm /> */}
       {/* <Testimonials /> */}
       {/* <FAQSection /> */}
       

@@ -62,7 +62,7 @@ const LogoSection: React.FC = () => {
   return (
     <section className="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 overflow-hidden">
       <h1 className="text-center pb-10 font-bold">
-        Trusted by Top <span className="underline decoration-black-500">Global Business Organizations</span>
+        Top <span className="underline decoration-black-500">target audience</span>
       </h1>
       
       <div className="max-w-full mx-auto px-6 relative" ref={carouselRef}>
