@@ -1,4 +1,3 @@
-'use client'
 import React, { useState } from 'react';
 import { submitContactForm, ContactFormData } from "../../lib/api";
 
@@ -64,7 +63,7 @@ export default function ContactForm() {
       
       {status.submitted && (
         <div className="mb-6 p-4 bg-green-100 text-green-700 rounded-lg">
-          Message sent successfully! We'll get back to you soon.
+          Message sent successfully! We&apos;ll get back to you soon.
         </div>
       )}
 

@@ -74,7 +74,7 @@ export default function WishList() {
         <div className="w-full mt-8 md:mt-0 mx-auto md:mx-0 md:mr-4 lg:mr-10 max-w-md bg-transparent">
           {status.submitted && (
             <div className="mb-4 p-4 bg-green-100 text-green-700 rounded-lg">
-              Thank you for joining our wishlist! We'll notify you when we launch.
+              Thank you for joining our wishlist! We&apos;ll notify you when we launch.
             </div>
           )}
 
