@@ -70,9 +70,7 @@ export default function Footer() {
           <h4 className="text-lg md:text-xl font-bold mb-4 md:mb-6 text-indigo-300">Resources</h4>
           <div className="space-y-4">
             {[
-              { icon: FaBook, title: "Documentation", desc: "Comprehensive guides to help you get started", link: "/WhyFinetunai" },
-              { icon: FaRobot, title: "AI Academy", desc: "Free courses on AI fundamentals and best practices", link: "/WhyFinetunai" },
-              { icon: FaLaptopCode, title: "API Reference", desc: "Technical documentation for developers", link: "/WhyFinetunai" }
+              { icon: FaBook, title: "Documentation", desc: "Comprehensive guides to help you get started", link: "/WhyFinetunai" }
             ].map((item, i) => (
               <a 
                 key={i} 
@@ -89,9 +87,6 @@ export default function Footer() {
                 <FaArrowRight className="ml-auto self-center opacity-0 group-hover:opacity-100 text-indigo-400 transition-opacity" />
               </a>
             ))}
-            <a href="#" className="inline-block mt-2 text-indigo-400 hover:text-indigo-300 text-sm font-medium transition-colors">
-              View all resources <FaArrowRight className="inline ml-1" />
-            </a>
           </div>
         </div>
         

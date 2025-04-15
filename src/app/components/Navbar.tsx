@@ -45,24 +45,7 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-4 lg:space-x-8 text-base lg:text-lg font-medium text-gray-200">
-            <li>
-              <a 
-                href="/AIStudio" 
-                className="hover:text-indigo-400 transition"
-                onClick={handleNavLinkClick}
-              >
-                AI Studio
-              </a>
-            </li>
-            <li>
-              <a 
-                href="/AIStudio" 
-                className="hover:text-indigo-400 transition"
-                onClick={handleNavLinkClick}
-              >
-                AI Cloud
-              </a>
-            </li>
+           
             <li>
               <a 
                 href="/WhyFinetunai" 
@@ -88,6 +71,24 @@ export default function Navbar() {
                 onClick={handleNavLinkClick}
               >
                 Docs
+              </a>
+            </li>
+            <li>
+              <a 
+                href="/AIStudio" 
+                className="hover:text-indigo-400 transition"
+                onClick={handleNavLinkClick}
+              >
+                AI Studio
+              </a>
+            </li>
+            <li>
+              <a 
+                href="/AIStudio" 
+                className="hover:text-indigo-400 transition"
+                onClick={handleNavLinkClick}
+              >
+                AI Cloud
               </a>
             </li>
           </ul>
@@ -137,24 +138,7 @@ export default function Navbar() {
         {isOpen && (
           <div className="md:hidden px-4 sm:px-6 pb-4 bg-gray-900 border-t border-gray-700 rounded-b-xl animate-fadeIn">
             <ul className="space-y-4 text-sm font-medium text-gray-200 py-2">
-              <li>
-                <a 
-                  href="/AIStudio"
-                  className="block py-2 hover:text-indigo-400"
-                  onClick={handleNavLinkClick}
-                >
-                  AI Studio
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="/AIStudio"
-                  className="block py-2 hover:text-indigo-400"
-                  onClick={handleNavLinkClick}
-                >
-                  AI Cloud
-                </a>
-              </li>
+              
               <li>
                 <a 
                   href="/WhyFinetunai" 
@@ -180,6 +164,24 @@ export default function Navbar() {
                   onClick={handleNavLinkClick}
                 >
                   Docs
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/AIStudio"
+                  className="block py-2 hover:text-indigo-400"
+                  onClick={handleNavLinkClick}
+                >
+                  AI Studio
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/AIStudio"
+                  className="block py-2 hover:text-indigo-400"
+                  onClick={handleNavLinkClick}
+                >
+                  AI Cloud
                 </a>
               </li>
               <li className="pt-2">
