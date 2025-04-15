@@ -1,19 +1,12 @@
-"use client";
+
 
 import Image from "next/image";
 import heroImage from "../../../public/asserts/Abstract Design.png";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-// import svg from "../../../public/asserts/Container.png";
+
 
 export default function ProductOverview() {
-  const [isClient, setIsClient] = useState(false);
-
-  // Only run client-side code after component mounts
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
+ 
   return (
     <section className="relative bg-gray-900 text-white py-12 md:py-16 px-4 md:px-6 overflow-hidden">
       {/* Background Image */}
