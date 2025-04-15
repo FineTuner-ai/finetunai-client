@@ -4,8 +4,8 @@ import HeroSection from "./components/HeroSection";
 import WhishList from "./components/WhishList";
 import Features from "./components/Features";
 import Partners from "./components/Partners";
-import FAQSection from "./components/FAQSection";
-import Testimonials from "./components/Testimonials";
+// import FAQSection from "./components/FAQSection";
+// import Testimonials from "./components/Testimonials";
 import ContactForm from "./components/Contact"
 import Finetune from "./components/Fineturne";
 

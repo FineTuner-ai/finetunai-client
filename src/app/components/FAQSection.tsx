@@ -38,11 +38,11 @@ export default function FAQSection() {
                 </div>
               </summary>
               <p className="mt-2 text-gray-300 text-left">
-                It's for everyone — no-code creators, data teams, enterprises, and developers who want to build or fine-tune AI without hassle.
+                It’s for everyone — no-code creators, data teams, enterprises, and developers who want to build or fine-tune AI without hassle.
               </p>
             </details>
 
-            <details className="border  backdrop-blur-sm rounded-md p-3 md:p-4 text-white">
+            <details className="border border-indigo-400 bg-black bg-opacity-70 backdrop-blur-sm rounded-md p-3 md:p-4 text-white">
               <summary className="font-semibold cursor-pointer flex justify-between items-start">
                 <span className="pr-4 text-left">Can I share AI apps with others?</span>
                 <div className="h-5 w-5 flex-shrink-0 text-indigo-300">
@@ -58,7 +58,7 @@ export default function FAQSection() {
 
             <details className="border border-indigo-400 bg-black bg-opacity-70 backdrop-blur-sm rounded-md p-3 md:p-4 text-white">
               <summary className="font-semibold cursor-pointer flex justify-between items-start">
-                <span className="pr-4 text-left">What if I don't know how to code or use ML?</span>
+                <span className="pr-4 text-left">What if I don’t know how to code or use ML?</span>
                 <div className="h-5 w-5 flex-shrink-0 text-indigo-300">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
