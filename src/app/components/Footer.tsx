@@ -84,11 +84,11 @@ export default function Footer() {
           <div className="space-y-4 md:space-y-6 text-xs md:text-sm">
             <div>
               <h5 className="text-blue-400 font-medium mb-1">Headquarters</h5>
-              <p className="text-gray-300">San Francisco, CA · Remote Worldwide</p>
+              <p className="text-gray-300">San Francisco, CA · Remote USA</p>
             </div>
             <div>
               <h5 className="text-blue-400 font-medium mb-1">Phone</h5>
-              <p className="text-gray-300">+233 55 415 1600</p>
+              <p className="text-gray-300">+15103659609</p>
             </div>
             <div>
               <h5 className="text-blue-400 font-medium mb-1">Email</h5>

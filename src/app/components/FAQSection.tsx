@@ -19,7 +19,7 @@ export default function FAQSection() {
       </div>
 
       {/* Main Content - centered on mobile, aligned right on desktop */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col items-center md:items-end md:ml-auto">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  flex flex-col items-center md:items-end md:ml-auto">
         <div className="text-center md:text-right max-w-xl md:max-w-4xl w-full md:pr-8 lg:pr-16">
           <h2 className="text-xl md:text-2xl font-bold my-6 md:m-10 text-white">
             Questions and answers for common ML queries
