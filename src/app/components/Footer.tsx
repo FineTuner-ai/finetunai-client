@@ -2,8 +2,8 @@
 
 import Image from 'next/image';
 import { FaXTwitter, FaLinkedinIn, FaRedditAlien, FaEnvelope, FaPhone, FaLocationDot } from 'react-icons/fa6';
+import { FaArrowRight, FaBook, FaRobot, FaLaptopCode } from 'react-icons/fa6';
 import trans from "../../../public/asserts/div.pattern-1.png";
-import bg from "../../../public/asserts/project-5.jpg.png";
 
 export default function Footer() {
   return (
@@ -66,22 +66,33 @@ export default function Footer() {
           </ul>
         </div>
         
-        {/* Platform Snapshots */}
+        {/* Resources Section - Replacing Platform Snapshots */}
         <div className="col-span-1">
-          <h4 className="text-lg md:text-xl font-bold mb-4 md:mb-6 text-indigo-300">Platform Snapshots</h4>
-          <div className="grid grid-cols-3 gap-2 md:gap-3">
-            {[...Array(6)].map((_, i) => (
-              <a key={i} href="#" className="block hover:opacity-80 transition-opacity">
-                <div className="relative w-full aspect-square bg-indigo-900/50 rounded-md overflow-hidden shadow-md">
-                  <Image
-                    src={bg}
-                    alt={`Platform snapshot ${i + 1}`}
-                    fill
-                    className="object-cover"
-                  />
+          <h4 className="text-lg md:text-xl font-bold mb-4 md:mb-6 text-indigo-300">Resources</h4>
+          <div className="space-y-4">
+            {[
+              { icon: FaBook, title: "Documentation", desc: "Comprehensive guides to help you get started", link: "/WhyFinetunai" },
+              { icon: FaRobot, title: "AI Academy", desc: "Free courses on AI fundamentals and best practices", link: "/WhyFinetunai" },
+              { icon: FaLaptopCode, title: "API Reference", desc: "Technical documentation for developers", link: "/WhyFinetunai" }
+            ].map((item, i) => (
+              <a 
+                key={i} 
+                href={item.link} 
+                className="group flex items-start p-3 bg-indigo-900/20 rounded-lg hover:bg-indigo-900/40 transition-colors duration-300"
+              >
+                <div className="mr-3 mt-1 p-2 bg-indigo-900/50 rounded-md text-indigo-300 group-hover:text-indigo-200">
+                  <item.icon className="text-lg" />
                 </div>
+                <div>
+                  <h5 className="font-medium mb-1 group-hover:text-indigo-300 transition-colors">{item.title}</h5>
+                  <p className="text-gray-400 text-sm">{item.desc}</p>
+                </div>
+                <FaArrowRight className="ml-auto self-center opacity-0 group-hover:opacity-100 text-indigo-400 transition-opacity" />
               </a>
             ))}
+            <a href="#" className="inline-block mt-2 text-indigo-400 hover:text-indigo-300 text-sm font-medium transition-colors">
+              View all resources <FaArrowRight className="inline ml-1" />
+            </a>
           </div>
         </div>
         
@@ -93,7 +104,7 @@ export default function Footer() {
               <FaLocationDot className="text-indigo-500 mr-3 mt-1" />
               <div>
                 <h5 className="font-medium mb-1">Headquarters</h5>
-                <p className="text-gray-300">San Francisco, CA ·</p>
+                <p className="text-gray-300">San Francisco, CA</p>
               </div>
             </div>
             <div className="flex items-start">
@@ -115,6 +126,8 @@ export default function Footer() {
               </div>
             </div>
           </div>
+          
+         
         </div>
       </div>
       

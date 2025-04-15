@@ -47,7 +47,7 @@ export default function Navbar() {
           <ul className="hidden md:flex space-x-4 lg:space-x-8 text-base lg:text-lg font-medium text-gray-200">
             <li>
               <a 
-                href="#features" 
+                href="/AIStudio" 
                 className="hover:text-indigo-400 transition"
                 onClick={handleNavLinkClick}
               >
@@ -56,7 +56,7 @@ export default function Navbar() {
             </li>
             <li>
               <a 
-                href="#team" 
+                href="/AIStudio" 
                 className="hover:text-indigo-400 transition"
                 onClick={handleNavLinkClick}
               >
@@ -65,7 +65,7 @@ export default function Navbar() {
             </li>
             <li>
               <a 
-                href="#faqs" 
+                href="/WhyFinetunai" 
                 className="hover:text-indigo-400 transition"
                 onClick={handleNavLinkClick}
               >
@@ -74,7 +74,7 @@ export default function Navbar() {
             </li>
             <li>
               <a 
-                href="#contact" 
+                href="/WhyFinetunai" 
                 className="hover:text-indigo-400 transition"
                 onClick={handleNavLinkClick}
               >
@@ -83,7 +83,7 @@ export default function Navbar() {
             </li>
             <li>
               <a 
-                href="#contact" 
+                href="/WhyFinetunai" 
                 className="hover:text-indigo-400 transition"
                 onClick={handleNavLinkClick}
               >
@@ -139,7 +139,7 @@ export default function Navbar() {
             <ul className="space-y-4 text-sm font-medium text-gray-200 py-2">
               <li>
                 <a 
-                  href="#features" 
+                  href="/WhyFinetunai" 
                   className="block py-2 hover:text-indigo-400"
                   onClick={handleNavLinkClick}
                 >
@@ -148,7 +148,7 @@ export default function Navbar() {
               </li>
               <li>
                 <a 
-                  href="#team" 
+                  href="/WhyFinetunai" 
                   className="block py-2 hover:text-indigo-400"
                   onClick={handleNavLinkClick}
                 >
@@ -157,7 +157,7 @@ export default function Navbar() {
               </li>
               <li>
                 <a 
-                  href="#faqs" 
+                  href="/WhyFinetunai" 
                   className="block py-2 hover:text-indigo-400"
                   onClick={handleNavLinkClick}
                 >
@@ -166,7 +166,7 @@ export default function Navbar() {
               </li>
               <li>
                 <a 
-                  href="#contact" 
+                  href="/WhyFinetunai" 
                   className="block py-2 hover:text-indigo-400"
                   onClick={handleNavLinkClick}
                 >
@@ -175,7 +175,7 @@ export default function Navbar() {
               </li>
               <li>
                 <a 
-                  href="#contact" 
+                  href="/WhyFinetunai" 
                   className="block py-2 hover:text-indigo-400"
                   onClick={handleNavLinkClick}
                 >
