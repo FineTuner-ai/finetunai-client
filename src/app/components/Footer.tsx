@@ -28,9 +28,9 @@ export default function Footer() {
           </p>
           <div className="flex space-x-4">
             {[
-              { Icon: FaXTwitter, link: "https://x.com", label: "Twitter" },
-              { Icon: FaLinkedinIn, link: "https://linkedin.com", label: "LinkedIn" },
-              { Icon: FaRedditAlien, link: "https://reddit.com", label: "Reddit" }
+              { Icon: FaXTwitter, link: "https://x.com/FineTunAI", label: "Twitter" },
+              { Icon: FaLinkedinIn, link: "https://www.linkedin.com/company/finetun-ai/", label: "LinkedIn" },
+              { Icon: FaRedditAlien, link: "http://www.reddit.com/user/FineTun-AI/", label: "Reddit" }
             ].map(({ Icon, link, label }, i) => (
               <a 
                 key={i} 
@@ -93,7 +93,7 @@ export default function Footer() {
               <FaLocationDot className="text-indigo-500 mr-3 mt-1" />
               <div>
                 <h5 className="font-medium mb-1">Headquarters</h5>
-                <p className="text-gray-300">San Francisco, CA · Remote USA</p>
+                <p className="text-gray-300">San Francisco, CA ·</p>
               </div>
             </div>
             <div className="flex items-start">
