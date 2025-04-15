@@ -151,7 +151,7 @@ export default function RequestDemo() {
                   status.submitting ? 'opacity-70 cursor-not-allowed' : ''
                 }`}
               >
-                {status.submitting ? 'Processing...' : 'Schedule My Demo'}
+                {status.submitting ? 'Processing...' : 'Join WhishList'}
               </button>
             </div>
 

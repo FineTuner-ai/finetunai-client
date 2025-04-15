@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 
 const Finetune = () => {
   return (
@@ -16,9 +17,12 @@ const Finetune = () => {
             leading models, powerful infrastructure, and transparent pricing.
           </p>
           <div className="pt-2 sm:pt-4">
-            <button className="bg-white text-indigo-600 font-medium px-6 sm:px-8 py-2 sm:py-3 rounded-full hover:bg-gray-100 transition-colors">
+            <Link href="/WhyFinetunai">
+            <button className="bg-white text-indigo-600 cursor-pointer font-medium px-6 sm:px-8 py-2 sm:py-3 rounded-full hover:bg-gray-100 transition-colors">
               Start fine-tuning
             </button>
+            </Link>
+           
           </div>
         </div>
 

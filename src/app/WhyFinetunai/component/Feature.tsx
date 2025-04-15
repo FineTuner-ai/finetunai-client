@@ -144,7 +144,7 @@ export default function WhyFineTunAI() {
     }
   };
   
-  const stepLineRef = useRef(null);
+  const stepLineRef = useRef<HTMLDivElement>(null);
   
   useEffect(() => {
     // Animation for workflow step line
@@ -171,23 +171,12 @@ export default function WhyFineTunAI() {
 
   // Floating animation for accent elements
   const floatingAnimation = {
-    y: [0, -10, 0],
-    transition: {
-      duration: 4,
-      repeat: Infinity,
-      repeatType: "reverse",
-      ease: "easeInOut"
-    }
+    y: [0, -10, 0]
   };
 
   // Pulse animation for call-to-action
   const pulseAnimation = {
-    scale: [1, 1.03, 1],
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-      repeatType: "reverse",
-    }
+    scale: [1, 1.03, 1]
   };
 
   return (
@@ -197,15 +186,25 @@ export default function WhyFineTunAI() {
         <div className="absolute top-10 right-0 opacity-10 pointer-events-none">
           <motion.div
             className="w-64 h-64 rounded-full bg-indigo-500/30 blur-3xl"
-            animate={floatingAnimation}
+            animate={{ y: [0, -10, 0] }}
+            transition={{ 
+              duration: 4,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut"
+            }}
           />
         </div>
         <div className="absolute bottom-40 left-0 opacity-10 pointer-events-none">
           <motion.div
             className="w-48 h-48 rounded-full bg-purple-500/30 blur-3xl"
-            animate={{
-              ...floatingAnimation,
-              transition: { ...floatingAnimation.transition, delay: 1 }
+            animate={{ y: [0, -10, 0] }}
+            transition={{ 
+              duration: 4,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut",
+              delay: 1
             }}
           />
         </div>
@@ -264,7 +263,7 @@ export default function WhyFineTunAI() {
             
             {/* Workflow Steps */}
             <motion.div 
-              className="space-y-8 md:space-y-0 relative"
+              className="space-y-8 md:space-y-8 relative"
               variants={staggerContainer}
             >
               {workflowSteps.map((step, index) => (
@@ -499,7 +498,12 @@ export default function WhyFineTunAI() {
         >
           <motion.div 
             className="inline-flex flex-col sm:flex-row gap-4 justify-center"
-            animate={pulseAnimation}
+            animate={{ scale: [1, 1.03, 1] }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
           >
             <Link href="/AIStudio">
               <motion.button 
