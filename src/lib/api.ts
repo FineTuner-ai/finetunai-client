@@ -13,7 +13,7 @@ export interface ContactFormData {
   }
   
   export async function submitContactForm(formData: ContactFormData): Promise<ContactResponse> {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://finetunai-server-2.onrender.com';
     const response = await fetch(`${apiUrl}/api/contact`, {
       method: 'POST',
       headers: {
