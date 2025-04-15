@@ -253,7 +253,7 @@ export default function WhyFineTunAI() {
             
             {/* Workflow Steps */}
             <motion.div 
-              className="space-y-8 md:space-y-0 relative"
+              className="space-y-8 md:space-y-8 relative"
               variants={staggerContainer}
             >
               {workflowSteps.map((step, index) => (
