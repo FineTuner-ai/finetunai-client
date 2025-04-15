@@ -139,7 +139,7 @@ export default function Navbar() {
             <ul className="space-y-4 text-sm font-medium text-gray-200 py-2">
               <li>
                 <a 
-                  href="/WhyFinetunai" 
+                  href="/AIStudio"
                   className="block py-2 hover:text-indigo-400"
                   onClick={handleNavLinkClick}
                 >
@@ -148,7 +148,7 @@ export default function Navbar() {
               </li>
               <li>
                 <a 
-                  href="/WhyFinetunai" 
+                  href="/AIStudio"
                   className="block py-2 hover:text-indigo-400"
                   onClick={handleNavLinkClick}
                 >
