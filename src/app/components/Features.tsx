@@ -1,10 +1,5 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import image1 from "../../../public/asserts/project-5.jpg.png";
-import image2 from "../../../public/asserts/project-6.jpg.png";
-import image3 from "../../../public/asserts/image-SAqpzSAJ3C23SNrk7OR7G.png";
-import image4 from "../../../public/asserts/Figure.png";
-
 
 export default function Features() {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -18,7 +13,8 @@ export default function Features() {
       title: "Design AI Workflows Visually",
       description:
         "Leverage a canvas-based builder to create end-to-end AI pipelines for fine-tuning and RAG — from document parsing to model output",
-      image: image1,
+      image:
+        "https://res.cloudinary.com/ecosheane/image/upload/v1744755949/project-6.jpg_tetjgf.png",
       iconColor: "text-blue-500",
       icon: "M12,2L2,12h3v8h6v-6h2v6h6v-8h3L12,2z",
     },
@@ -26,7 +22,8 @@ export default function Features() {
       title: "Seamlessly Manage Your Data",
       description:
         "Upload, organize, and tag documents. Preview, version, and track changes with full control over your datasets.",
-      image: image2,
+      image:
+        "https://res.cloudinary.com/ecosheane/image/upload/v1744755948/image-SAqpzSAJ3C23SNrk7OR7G_dnc4mp.png",
       iconColor: "text-orange-500",
       icon: "M12,3L2,12h3v8h14v-8h3L12,3z M12,16c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2s2,0.9,2,2C14,15.1,13.1,16,12,16z",
     },
@@ -34,7 +31,8 @@ export default function Features() {
       title: "Craft, Test, and Optimize Prompts Without Code",
       description:
         "Use prebuilt templates, A/B testing, and dynamic content insertion to build better prompt strategies.",
-      image: image3,
+      image:
+        "https://res.cloudinary.com/ecosheane/image/upload/v1744755947/Figure_jkhmy5.png",
       iconColor: "text-red-500",
       icon: "M12,2L4,5v6.09c0,5.05,3.41,9.76,8,10.91c4.59-1.15,8-5.86,8-10.91V5L12,2z M10.94,15.54L7.4,12l1.41-1.41l2.12,2.12l4.24-4.24l1.41,1.41L10.94,15.54z",
     },
@@ -42,7 +40,8 @@ export default function Features() {
       title: "Deploy and Scale Effortlessly",
       description:
         "Launch production-ready AI applications with one click and scale automatically based on usage patterns.",
-      image: image4,
+      image:
+        "https://res.cloudinary.com/ecosheane/image/upload/v1744755948/project-5.jpg_yjklsl.png",
       iconColor: "text-green-500",
       icon: "M3,13h8V3H3V13z M3,21h8v-6H3V21z M13,21h8V11h-8V21z M13,3v6h8V3H13z",
     },
@@ -106,7 +105,9 @@ export default function Features() {
       className="max-w-6xl mx-auto py-8 sm:py-12 md:py-16 px-4 overflow-hidden"
     >
       <div className="text-center mb-6 md:mb-8">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-1 md:mb-2">FEATURES</h2>
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-1 md:mb-2">
+          FEATURES
+        </h2>
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 px-2">
           A No-Code Platform Designed for AI Builders
         </h1>
@@ -132,8 +133,11 @@ export default function Features() {
                   const item = features[featureIndex];
 
                   const visibilityClass =
-                    offset === 2 ? "hidden md:block" :
-                    offset === 1 ? "hidden sm:block" : "";
+                    offset === 2
+                      ? "hidden md:block"
+                      : offset === 1
+                      ? "hidden sm:block"
+                      : "";
 
                   return (
                     <div
@@ -142,7 +146,7 @@ export default function Features() {
                     >
                       <div className="h-48 sm:h-56 md:h-64 flex items-center justify-center p-2 md:p-4 relative bg-gradient-to-br from-purple-900 to-blue-800">
                         <img
-                          src={item.image.src}
+                          src={item.image}
                           alt={item.title}
                           className="h-full w-full object-cover absolute inset-0"
                         />
@@ -151,7 +155,9 @@ export default function Features() {
                       <div className="p-4 md:p-6 text-center">
                         <div className="relative -mt-12 mb-3 md:mb-4">
                           <div className="bg-white rounded-full w-12 h-12 md:w-16 md:h-16 mx-auto flex items-center justify-center border-4 border-white shadow-md">
-                            <div className={`${item.iconColor} font-bold text-lg md:text-xl`}>
+                            <div
+                              className={`${item.iconColor} font-bold text-lg md:text-xl`}
+                            >
                               <svg
                                 viewBox="0 0 24 24"
                                 width="24"

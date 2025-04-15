@@ -1,7 +1,6 @@
 
 
 import Image from "next/image";
-import heroImage from "../../../public/asserts/Abstract Design.png";
 import Link from "next/link";
 
 
@@ -13,7 +12,7 @@ export default function ProductOverview() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0">
           <Image
-            src={heroImage}
+            src="https://res.cloudinary.com/ecosheane/image/upload/v1744755947/Abstract_Design_tcjzrm.png"
             alt="Hero Background"
             fill
             className="object-cover object-center"

@@ -169,16 +169,6 @@ export default function WhyFineTunAI() {
     }
   }, []);
 
-  // Floating animation for accent elements
-  const floatingAnimation = {
-    y: [0, -10, 0]
-  };
-
-  // Pulse animation for call-to-action
-  const pulseAnimation = {
-    scale: [1, 1.03, 1]
-  };
-
   return (
     <section id="why-finetun" className="bg-gradient-to-b mt-10 from-gray-900 to-indigo-950 py-16 md:py-24 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -263,7 +253,7 @@ export default function WhyFineTunAI() {
             
             {/* Workflow Steps */}
             <motion.div 
-              className="space-y-8 md:space-y-8 relative"
+              className="space-y-8 md:space-y-0 relative"
               variants={staggerContainer}
             >
               {workflowSteps.map((step, index) => (

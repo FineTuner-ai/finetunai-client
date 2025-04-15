@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import { FaXTwitter, FaLinkedinIn, FaRedditAlien, FaEnvelope, FaPhone, FaLocationDot } from 'react-icons/fa6';
 import { FaArrowRight, FaBook, FaRobot, FaLaptopCode } from 'react-icons/fa6';
-import trans from "../../../public/asserts/div.pattern-1.png";
 
 export default function Footer() {
   return (
@@ -11,7 +10,7 @@ export default function Footer() {
       {/* Background pattern */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={trans}
+          src="https://res.cloudinary.com/ecosheane/image/upload/v1744755946/div.pattern-1_o1fn1a.png"
           alt="Decorative circuit pattern"
           fill
           className="opacity-5 object-cover"
