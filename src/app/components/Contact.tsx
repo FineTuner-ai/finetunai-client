@@ -115,7 +115,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={status.submitting}
-            className={`w-full bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
+            className={`w-full bg-indigo-900 bg-opacity-20 text-white px-6 py-3 rounded-full hover:bg-indigo-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
               status.submitting ? 'opacity-70 cursor-not-allowed' : ''
             }`}
           >

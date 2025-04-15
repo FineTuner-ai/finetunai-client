@@ -1,20 +1,20 @@
 'use client'
 
 import Image from 'next/image';
-import { FaFacebookF, FaPinterestP, FaTwitter, FaDribbble } from 'react-icons/fa';
+import { FaXTwitter, FaLinkedinIn, FaRedditAlien, FaEnvelope, FaPhone, FaLocationDot } from 'react-icons/fa6';
 import trans from "../../../public/asserts/div.pattern-1.png";
 import bg from "../../../public/asserts/project-5.jpg.png";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-blue-950 text-white py-10 md:py-16 px-4 md:px-6 overflow-hidden">
+    <footer className="relative bg-gray-900 text-white py-12 md:py-16 px-4 md:px-6 overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 z-0">
         <Image
           src={trans}
           alt="Decorative circuit pattern"
           fill
-          className="opacity-10 object-cover"
+          className="opacity-5 object-cover"
           priority
         />
       </div>
@@ -26,14 +26,21 @@ export default function Footer() {
           <p className="text-gray-300 text-sm md:text-base mb-4 md:mb-6">
             FinetunerAI is a no-code platform enabling teams to build, fine-tune, and deploy AI models with custom data—without writing a single line of code. Scalable, secure, and accessible to all.
           </p>
-          <div className="flex space-x-3">
-            {[FaFacebookF, FaPinterestP, FaTwitter, FaDribbble].map((Icon, i) => (
+          <div className="flex space-x-4">
+            {[
+              { Icon: FaXTwitter, link: "https://x.com", label: "Twitter" },
+              { Icon: FaLinkedinIn, link: "https://linkedin.com", label: "LinkedIn" },
+              { Icon: FaRedditAlien, link: "https://reddit.com", label: "Reddit" }
+            ].map(({ Icon, link, label }, i) => (
               <a 
                 key={i} 
-                href="#" 
-                className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-gray-400 flex items-center justify-center hover:bg-blue-800 transition-colors"
+                href={link} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full border border-indigo-400 flex items-center justify-center hover:bg-indigo-900 transition-colors duration-300"
+                aria-label={label}
               >
-                <Icon className="text-sm md:text-base" />
+                <Icon className="text-base" />
               </a>
             ))}
           </div>
@@ -41,8 +48,8 @@ export default function Footer() {
         
         {/* Product Highlights */}
         <div className="col-span-1">
-          <h4 className="text-lg md:text-xl font-bold mb-4 md:mb-6">Explore Features</h4>
-          <ul className="space-y-2 md:space-y-3 text-sm md:text-base">
+          <h4 className="text-lg md:text-xl font-bold mb-4 md:mb-6 text-indigo-300">Explore Features</h4>
+          <ul className="space-y-3 text-sm md:text-base">
             {[
               'Visual Workflow Builder',
               'Prompt Engineering Studio',
@@ -52,20 +59,20 @@ export default function Footer() {
               'Document Management'
             ].map((link, i) => (
               <li key={i} className="flex items-center">
-                <span className="text-blue-400 mr-2">■</span>
-                <a href="#" className="hover:text-blue-300 transition-colors">{link}</a>
+                <span className="text-indigo-500 mr-2">■</span>
+                <a href="#" className="hover:text-indigo-300 transition-colors">{link}</a>
               </li>
             ))}
           </ul>
         </div>
         
-        {/* Portfolio Section */}
+        {/* Platform Snapshots */}
         <div className="col-span-1">
-          <h4 className="text-lg md:text-xl font-bold mb-4 md:mb-6">Platform Snapshots</h4>
-          <div className="grid grid-cols-3 gap-2 md:gap-4">
+          <h4 className="text-lg md:text-xl font-bold mb-4 md:mb-6 text-indigo-300">Platform Snapshots</h4>
+          <div className="grid grid-cols-3 gap-2 md:gap-3">
             {[...Array(6)].map((_, i) => (
               <a key={i} href="#" className="block hover:opacity-80 transition-opacity">
-                <div className="relative w-full aspect-square bg-blue-800 rounded-md overflow-hidden">
+                <div className="relative w-full aspect-square bg-indigo-900/50 rounded-md overflow-hidden shadow-md">
                   <Image
                     src={bg}
                     alt={`Platform snapshot ${i + 1}`}
@@ -80,20 +87,45 @@ export default function Footer() {
         
         {/* Contact Info */}
         <div className="col-span-1">
-          <h4 className="text-lg md:text-xl font-bold mb-4 md:mb-6">Get in Touch</h4>
-          <div className="space-y-4 md:space-y-6 text-xs md:text-sm">
-            <div>
-              <h5 className="text-blue-400 font-medium mb-1">Headquarters</h5>
-              <p className="text-gray-300">San Francisco, CA · Remote USA</p>
+          <h4 className="text-lg md:text-xl font-bold mb-4 md:mb-6 text-indigo-300">Get in Touch</h4>
+          <div className="space-y-4 md:space-y-5 text-sm">
+            <div className="flex items-start">
+              <FaLocationDot className="text-indigo-500 mr-3 mt-1" />
+              <div>
+                <h5 className="font-medium mb-1">Headquarters</h5>
+                <p className="text-gray-300">San Francisco, CA · Remote USA</p>
+              </div>
             </div>
-            <div>
-              <h5 className="text-blue-400 font-medium mb-1">Phone</h5>
-              <p className="text-gray-300">+15103659609</p>
+            <div className="flex items-start">
+              <FaPhone className="text-indigo-500 mr-3 mt-1" />
+              <div>
+                <h5 className="font-medium mb-1">Phone</h5>
+                <a href="tel:+15103659609" className="text-gray-300 hover:text-indigo-300 transition-colors">
+                  +1 (510) 365-9609
+                </a>
+              </div>
             </div>
-            <div>
-              <h5 className="text-blue-400 font-medium mb-1">Email</h5>
-              <p className="text-gray-300">info@finetunai.com</p>
+            <div className="flex items-start">
+              <FaEnvelope className="text-indigo-500 mr-3 mt-1" />
+              <div>
+                <h5 className="font-medium mb-1">Email</h5>
+                <a href="mailto:info@finetunai.com" className="text-gray-300 hover:text-indigo-300 transition-colors">
+                  info@finetunai.com
+                </a>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Copyright Section */}
+      <div className="relative z-10 max-w-7xl mx-auto mt-12 pt-6 border-t border-indigo-900">
+        <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+          <p>&copy; {new Date().getFullYear()} FinetunAI. All rights reserved.</p>
+          <div className="flex space-x-6 mt-3 md:mt-0">
+            <a href="#" className="hover:text-indigo-300 transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-indigo-300 transition-colors">Terms of Service</a>
+            <a href="#" className="hover:text-indigo-300 transition-colors">Cookies</a>
           </div>
         </div>
       </div>

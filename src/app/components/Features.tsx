@@ -2,16 +2,17 @@
 import React, { useState, useEffect, useRef } from "react";
 import image1 from "../../../public/asserts/project-5.jpg.png";
 import image2 from "../../../public/asserts/project-6.jpg.png";
-import image3 from "../../../public/asserts/Figure.png";
+import image3 from "../../../public/asserts/image-SAqpzSAJ3C23SNrk7OR7G.png";
+import image4 from "../../../public/asserts/Figure.png";
+
 
 export default function Features() {
   const [activeSlide, setActiveSlide] = useState(0);
   const [transition, setTransition] = useState(true);
-  const totalSlides = 4; // Total number of slides
+  const totalSlides = 4;
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const carouselRef = useRef<HTMLDivElement | null>(null);
 
-  // Create duplicated features array for infinite scroll effect
   const originalFeatures = [
     {
       title: "Design AI Workflows Visually",
@@ -41,20 +42,17 @@ export default function Features() {
       title: "Deploy and Scale Effortlessly",
       description:
         "Launch production-ready AI applications with one click and scale automatically based on usage patterns.",
-      image: image1, // Reusing image1 for the fourth slide
+      image: image4,
       iconColor: "text-green-500",
       icon: "M3,13h8V3H3V13z M3,21h8v-6H3V21z M13,21h8V11h-8V21z M13,3v6h8V3H13z",
     },
   ];
 
-  // Create a features array with duplicated items for infinite scrolling
   const features = [...originalFeatures, ...originalFeatures];
 
-  // Auto-scroll function with infinite loop
   useEffect(() => {
     const startInterval = () => {
       intervalRef.current = setInterval(() => {
-        // Increment activeSlide
         setActiveSlide((prev) => {
           if (prev >= totalSlides - 1) {
             setTimeout(() => {
@@ -80,11 +78,8 @@ export default function Features() {
     };
   }, []);
 
-  // Function to handle manual navigation
   const goToSlide = (index: number) => {
     setActiveSlide(index);
-
-    // Reset interval when manually changing slides
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
     }
@@ -121,9 +116,7 @@ export default function Features() {
         </p>
       </div>
 
-      {/* Carousel Container */}
       <div className="relative mt-8 md:mt-12 overflow-hidden">
-        {/* Slides wrapper */}
         <div
           ref={carouselRef}
           className={`flex ${
@@ -131,17 +124,15 @@ export default function Features() {
           }`}
           style={{ transform: `translateX(-${activeSlide * 100}%)` }}
         >
-          {features.map((feature, index) => (
+          {features.map((_, index) => (
             <div key={index} className="min-w-full px-1 sm:px-2 md:px-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
-                {/* Feature Cards - We'll show 1 on mobile, 2 on tablet, 3 on desktop per slide */}
                 {[0, 1, 2].map((offset) => {
                   const featureIndex = (index + offset) % features.length;
-                  const feature = features[featureIndex];
-                  
-                  // Hide the third card on small screens, second card on extra small screens
-                  const visibilityClass = 
-                    offset === 2 ? "hidden md:block" : 
+                  const item = features[featureIndex];
+
+                  const visibilityClass =
+                    offset === 2 ? "hidden md:block" :
                     offset === 1 ? "hidden sm:block" : "";
 
                   return (
@@ -150,10 +141,9 @@ export default function Features() {
                       className={`${visibilityClass} bg-white rounded-lg overflow-hidden shadow-lg`}
                     >
                       <div className="h-48 sm:h-56 md:h-64 flex items-center justify-center p-2 md:p-4 relative bg-gradient-to-br from-purple-900 to-blue-800">
-                        {/* Use the imported image instead of a placeholder */}
                         <img
-                          src={feature.image.src}
-                          alt={feature.title}
+                          src={item.image.src}
+                          alt={item.title}
                           className="h-full w-full object-cover absolute inset-0"
                         />
                         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-30"></div>
@@ -161,29 +151,24 @@ export default function Features() {
                       <div className="p-4 md:p-6 text-center">
                         <div className="relative -mt-12 mb-3 md:mb-4">
                           <div className="bg-white rounded-full w-12 h-12 md:w-16 md:h-16 mx-auto flex items-center justify-center border-4 border-white shadow-md">
-                            <div
-                              className={`${feature.iconColor} font-bold text-lg md:text-xl`}
-                            >
+                            <div className={`${item.iconColor} font-bold text-lg md:text-xl`}>
                               <svg
                                 viewBox="0 0 24 24"
                                 width="24"
                                 height="24"
                                 className="mx-auto md:w-8 md:h-8"
                               >
-                                <path fill="currentColor" d={feature.icon} />
+                                <path fill="currentColor" d={item.icon} />
                               </svg>
                             </div>
                           </div>
                         </div>
                         <h3 className="text-lg sm:text-xl font-bold mb-2">
-                          {feature.title}
+                          {item.title}
                         </h3>
                         <p className="text-gray-600 text-sm md:text-base mb-3 md:mb-4">
-                          {feature.description}
+                          {item.description}
                         </p>
-                        <button className="bg-blue-600 hover:bg-blue-700 text-white text-sm md:text-base font-medium py-1.5 px-4 md:py-2 md:px-6 rounded-full">
-                          Read More
-                        </button>
                       </div>
                     </div>
                   );
@@ -194,7 +179,6 @@ export default function Features() {
         </div>
       </div>
 
-      {/* Navigation Dots */}
       <div className="flex justify-center mt-6 sm:mt-8 md:mt-12 space-x-2">
         {Array.from({ length: totalSlides }).map((_, index) => (
           <button

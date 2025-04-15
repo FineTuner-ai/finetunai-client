@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import trans from "../../../public/asserts/div.pattern-1.png";
-import team1 from "../../../public/asserts/team1 (1).png";
+import team1 from "../../../public/asserts/team.png"
 
 export default function Testimonial() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -26,7 +26,7 @@ export default function Testimonial() {
   ];
 
   return (
-    <section className="relative bg-blue-950 text-white py-20 px-4 sm:px-6">
+    <section className="relative bg-indigo-950 text-white py-20 px-4 sm:px-6">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-20">
         <Image

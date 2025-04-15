@@ -20,8 +20,8 @@ export default function Home() {
       <Features />
       
       <ContactForm />
-      <Testimonials />
-      <FAQSection />
+      {/* <Testimonials /> */}
+      {/* <FAQSection /> */}
       
        
     </main>
