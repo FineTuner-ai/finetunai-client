@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { FaXTwitter, FaLinkedinIn, FaRedditAlien, FaEnvelope, FaPhone, FaLocationDot } from 'react-icons/fa6';
-import { FaArrowRight, FaBook, FaRobot, FaLaptopCode } from 'react-icons/fa6';
+import { FaArrowRight, FaBook } from 'react-icons/fa6';
 
 export default function Footer() {
   return (
