@@ -157,7 +157,7 @@ export default function RequestDemo() {
 
             <div className="flex items-center justify-center mt-6 text-gray-400 text-sm">
               <MessageSquare className="w-4 h-4 mr-2" />
-              <p>We'll respond within 24 hours</p>
+              <p>We&apos;ll respond within 24 hours</p>
             </div>
           </form>
         </div>

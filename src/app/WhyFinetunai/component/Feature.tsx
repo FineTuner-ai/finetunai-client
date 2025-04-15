@@ -148,21 +148,22 @@ export default function WhyFineTunAI() {
   
   useEffect(() => {
     // Animation for workflow step line
-    if (stepLineRef.current) {
+    if (stepLineRef.current){
+      const currentRef = stepLineRef.current; // Store ref value in a variable
       const observer = new IntersectionObserver(
         ([entry]) => {
           if (entry.isIntersecting) {
-            stepLineRef.current.style.height = "100%";
+            currentRef.style.height = "100%";
           }
         },
         { threshold: 0.3 }
       );
       
-      observer.observe(stepLineRef.current);
+      observer.observe(currentRef);
       
       return () => {
-        if (stepLineRef.current) {
-          observer.unobserve(stepLineRef.current);
+        if (currentRef) { // Use stored variable in cleanup
+          observer.unobserve(currentRef);
         }
       };
     }
@@ -229,7 +230,7 @@ export default function WhyFineTunAI() {
           </h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto">
             Training and deploying custom AI models is often a technical, costly, and infrastructure-heavy
-            process. At FineTun AI, we're changing that.
+            process. At FineTun AI, we&apos;re changing that.
           </p>
         </motion.div>
 
