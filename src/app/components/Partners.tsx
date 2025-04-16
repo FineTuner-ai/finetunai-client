@@ -3,8 +3,6 @@ import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 
 const logos = [
-  { src: "https://res.cloudinary.com/ecosheane/image/upload/v1744531899/forbes_t6od9q.png", alt: "Forbes", width: 144, height: 80 },
-  { src: "https://res.cloudinary.com/ecosheane/image/upload/v1744531900/itv_putzkv.png", alt: "Go Sport", width: 144, height: 80 },
   { src: "https://res.cloudinary.com/ecosheane/image/upload/v1744531900/Vector_1_l3dmz7.png", alt: "Sodicam", width: 144, height: 80 },
   { src: "https://res.cloudinary.com/ecosheane/image/upload/v1744531900/Vector_gsneui.png", alt: "Diagnostics", width: 144, height: 80 },
   { src: "https://res.cloudinary.com/ecosheane/image/upload/v1744531900/Vector_2_sozlq1.png", alt: "ITV", width: 144, height: 80 },
@@ -62,7 +60,7 @@ const LogoSection: React.FC = () => {
   return (
     <section className="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 overflow-hidden">
       <h1 className="text-center pb-10 font-bold">
-        Top <span className="underline decoration-black-500">target audience</span>
+      Built with <span className="underline decoration-black-500"> Startups and SMEs in Mind</span>
       </h1>
       
       <div className="max-w-full mx-auto px-6 relative" ref={carouselRef}>
