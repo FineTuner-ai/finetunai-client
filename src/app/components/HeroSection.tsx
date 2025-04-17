@@ -59,8 +59,8 @@ export default function ProductOverview() {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-          <Link href="#faqs">
-            <button className="w-full sm:w-auto text-xs sm:text-sm md:text-base bg-white border border-indigo-600 text-gray-800 hover:bg-indigo-50 hover:text-indigo-700 transition-all duration-200 px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-2xl sm:rounded-3xl font-semibold shadow-sm hover:shadow-md">
+          <Link href="/WhyFinetunai">
+            <button className="w-full sm:w-auto cursor-pointer text-xs sm:text-sm md:text-base bg-white border border-indigo-600 text-gray-800 hover:bg-indigo-50 hover:text-indigo-700 transition-all duration-200 px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-2xl sm:rounded-3xl font-semibold shadow-sm hover:shadow-md">
               Learn More
             </button>
           </Link>

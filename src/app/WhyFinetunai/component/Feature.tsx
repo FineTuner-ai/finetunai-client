@@ -170,7 +170,9 @@ export default function WhyFineTunAI() {
   }, []);
 
   return (
-    <section id="why-finetun" className="bg-gradient-to-b mt-10 from-gray-900 to-indigo-950 py-16 md:py-24 overflow-hidden">
+   
+      <section id="demo" className="bg-gradient-to-b  from-indigo-950 to-gray-900 py-16 md:py-24 text-white">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6"></div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Floating tech elements decoration */}
         <div className="absolute top-10 right-0 opacity-10 pointer-events-none">
@@ -199,40 +201,18 @@ export default function WhyFineTunAI() {
           />
         </div>
 
-        {/* Section Header */}
-        <motion.div 
-          className="text-center mb-12 md:mb-16"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={fadeInUp}
-        >
-          <motion.div 
-            className="inline-block px-3 py-1 bg-indigo-900/50 rounded-full text-indigo-300 text-xs font-medium tracking-wider mb-3"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          >
-            SIMPLIFIED AI DEVELOPMENT
-          </motion.div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-            Why Choose Finetun AI?
-          </h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-            Training and deploying custom AI models is often a technical, costly, and infrastructure-heavy
-            process. At FineTun AI, we&apos;re changing that.
-          </p>
-        </motion.div>
+        
 
         {/* How it Works Section */}
         <motion.div 
-          className="mb-16 md:mb-24"
+          className="mb-0 md:mb-24 "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeIn}
         >
           <motion.div 
-            className="text-center mb-10"
+            className="text-center mt-32 mb-10"
             variants={fadeInUp}
           >
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">How FineTun AI Works</h3>
