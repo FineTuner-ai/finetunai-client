@@ -39,7 +39,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="text-xl sm:text-2xl font-bold text-white tracking-tight">
             <Link href="/" className="cursor-pointer" onClick={handleNavLinkClick}>
-              FINETUN<span className="text-indigo-600">AI</span>
+            FineTun<span className="text-indigo-600">AI</span>
             </Link>
           </div>
 
