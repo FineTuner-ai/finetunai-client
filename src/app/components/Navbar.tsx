@@ -55,7 +55,7 @@ export default function Navbar() {
                 Why Finetunai
               </a>
             </li>
-            <li>
+            {/* <li>
               <a 
                 href="/WhyFinetunai" 
                 className="hover:text-indigo-400 transition"
@@ -72,7 +72,7 @@ export default function Navbar() {
               >
                 Docs
               </a>
-            </li>
+            </li> */}
             <li>
               <a 
                 href="/AIStudio" 
@@ -82,7 +82,7 @@ export default function Navbar() {
                 AI Studio
               </a>
             </li>
-            <li>
+            {/* <li>
               <a 
                 href="/AIStudio" 
                 className="hover:text-indigo-400 transition"
@@ -90,7 +90,7 @@ export default function Navbar() {
               >
                 AI Cloud
               </a>
-            </li>
+            </li> */}
           </ul>
 
           {/* CTA Button */}
@@ -148,7 +148,7 @@ export default function Navbar() {
                   Why Finetunai
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a 
                   href="/WhyFinetunai" 
                   className="block py-2 hover:text-indigo-400"
@@ -165,7 +165,7 @@ export default function Navbar() {
                 >
                   Docs
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a 
                   href="/AIStudio"
@@ -175,7 +175,7 @@ export default function Navbar() {
                   AI Studio
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a 
                   href="/AIStudio"
                   className="block py-2 hover:text-indigo-400"
@@ -183,7 +183,7 @@ export default function Navbar() {
                 >
                   AI Cloud
                 </a>
-              </li>
+              </li> */}
               <li className="pt-2">
                 <Link href="#wishlist" onClick={handleNavLinkClick}>
                   <button className="w-full bg-indigo-600/10 cursor-pointer hover:bg-indigo-700 transition-colors px-4 py-3 rounded-full text-white text-sm font-medium shadow-md">

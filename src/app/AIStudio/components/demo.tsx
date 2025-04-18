@@ -15,6 +15,26 @@ interface FormStatus {
   error: string | null;
 }
 
+// API function to submit the form
+async function submitDemoForm(formData: FormData) {
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://finetunai-server-2.onrender.com';
+  const response = await fetch(`${apiUrl}/api/contact`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(formData)
+  });
+  
+  const data = await response.json();
+  
+  if (!response.ok) {
+    throw new Error(data.error || 'Something went wrong');
+  }
+  
+  return data;
+}
+
 export default function RequestDemo() {
   const [formData, setFormData] = useState<FormData>({
     name: '',
@@ -41,11 +61,8 @@ export default function RequestDemo() {
     setStatus({ submitting: true, submitted: false, error: null });
 
     try {
-      // Replace with your actual API submission function
-      // await submitDemoForm(formData);
-      
-      // Simulating API call for demo purposes
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Submit the form using the API function
+      await submitDemoForm(formData);
       
       // Success
       setStatus({ submitting: false, submitted: true, error: null });
@@ -66,10 +83,10 @@ export default function RequestDemo() {
   };
 
   return (
-    <section id="demo" className="bg-gradient-to-b from-indigo-950 to-gray-900 py-16 md:py-24 text-white">
+    <section id="demo" className="bg-gradient-to-b  from-indigo-950 to-gray-900 py-16 md:py-24 text-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 mt-20">
           <div className="inline-block px-3 py-1 bg-indigo-900/50 rounded-full text-indigo-300 text-xs font-medium tracking-wider mb-3">
             SEE FINETUN AI IN ACTION
           </div>
@@ -151,7 +168,7 @@ export default function RequestDemo() {
                   status.submitting ? 'opacity-70 cursor-not-allowed' : ''
                 }`}
               >
-                {status.submitting ? 'Processing...' : 'Join WhishList'}
+                {status.submitting ? 'Processing...' : 'Join Waitlist'}
               </button>
             </div>
 

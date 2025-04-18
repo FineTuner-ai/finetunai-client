@@ -5,7 +5,7 @@ import Image from "next/image";
 const logos = [
   { src: "https://res.cloudinary.com/ecosheane/image/upload/v1744903564/logo-echo_esh6hy.png", alt: "Sodicam", width: 144, height: 80 },
   { src: "https://res.cloudinary.com/ecosheane/image/upload/v1744903562/logo-acme_lwmqin.png", alt: "Diagnostics", width: 144, height: 80 },
-  { src: "https://res.cloudinary.com/ecosheane/image/upload/v1744903562/logo-acme_lwmqin.png", alt: "ITV", width: 144, height: 80 },
+  { src: "https://res.cloudinary.com/ecosheane/image/upload/v1744903562/logo-pulse_feixsm.png", alt: "ITV", width: 144, height: 80 },
   { src: "https://res.cloudinary.com/ecosheane/image/upload/v1744903562/logo-apex_qyehhm.png", alt: "FIBA", width: 144, height: 80 },
 ];
 
@@ -13,7 +13,7 @@ const LogoSection = () => {
   const [position, setPosition] = useState(0);
   const carouselRef = useRef<HTMLDivElement | null>(null);
   const contentRef = useRef<HTMLDivElement | null>(null);
-  const speed = 0.75; // Reduced speed for smoother animation
+  const speed = 0.5; // Reduced speed for smoother animation
   
   // Create multiple copies to ensure smooth infinite scrolling
   const triplicatedLogos = [...logos, ...logos, ...logos];
