@@ -218,8 +218,8 @@ export default function WhyFineTunAI() {
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">How FineTun AI Works</h3>
             <p className="text-gray-300 max-w-3xl mx-auto">
               FineTun AI simplifies the complexity of fine-tuning large language models by offering a
-              seamless no-code platform that lets anyone—from technical teams to non-technical
-              operators—train and deploy custom AI models in minutes.
+              seamless no-code platform that lets anyone from technical teams to non technical
+              operators train and deploy custom AI models in minutes.
             </p>
           </motion.div>
 

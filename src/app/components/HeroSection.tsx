@@ -53,7 +53,7 @@ export default function ProductOverview() {
 
         {/* Description text */}
         <p className="text-sm sm:text-base md:text-lg text-gray-300 max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl mb-6 sm:mb-7 md:mb-8">
-          Empower your team to fine-tune LLMs and build Retrieval-Augmented
+          Empower your team to fine tune LLMs and build Retrieval Augmented
           Generation workflows no programming required.
         </p>
 

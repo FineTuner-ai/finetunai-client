@@ -52,8 +52,7 @@ export default function Navbar() {
                 className="hover:text-indigo-400 transition"
                 onClick={handleNavLinkClick}
               >
-                Why Finetunai
-              </a>
+                Why FineTunAI              </a>
             </li>
             {/* <li>
               <a 
@@ -97,7 +96,7 @@ export default function Navbar() {
           <div className="hidden md:block">
             <Link href="#wishlist" onClick={handleNavLinkClick}>
               <button className="bg-indigo-400/10 cursor-pointer hover:bg-indigo-700 transition-colors px-6 lg:px-8 py-2 rounded-full text-white text-sm font-medium shadow-md">
-                Coming Soon
+                Get Started
               </button>
             </Link>
           </div>
@@ -187,7 +186,7 @@ export default function Navbar() {
               <li className="pt-2">
                 <Link href="#wishlist" onClick={handleNavLinkClick}>
                   <button className="w-full bg-indigo-600/10 cursor-pointer hover:bg-indigo-700 transition-colors px-4 py-3 rounded-full text-white text-sm font-medium shadow-md">
-                    Coming Soon
+                    Get Started
                   </button>
                 </Link>
               </li>

@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="col-span-1 sm:col-span-2 lg:col-span-1">
           <h3 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4">FineTun AI</h3>
           <p className="text-gray-300 text-sm md:text-base mb-4 md:mb-6">
-            FineTunAI is a no-code platform enabling teams to build, fine-tune, and deploy AI models with custom data—without writing a single line of code. Scalable, secure, and accessible to all.
+            FineTunAI is a no-code platform enabling teams to build, fine-tune, and deploy AI models with custom data without writing a single line of code. Scalable, secure, and accessible to all.
           </p>
           <div className="flex space-x-4">
             {[
