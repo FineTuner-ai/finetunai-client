@@ -128,7 +128,7 @@ export default function Footer() {
       {/* Copyright Section */}
       <div className="relative z-10 max-w-7xl mx-auto mt-12 pt-6 border-t border-indigo-900">
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>&copy; {new Date().getFullYear()} FinetunAI. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} FineTunAI. All rights reserved.</p>
           <div className="flex space-x-6 mt-3 md:mt-0">
             <a href="#" className="hover:text-indigo-300 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-indigo-300 transition-colors">Terms of Service</a>
