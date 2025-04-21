@@ -13,7 +13,7 @@ const Finetune = () => {
           </h1>
           <p className="text-base sm:text-lg text-white/90 max-w-lg mx-auto md:mx-0">
             Transform open source models into specialized AI solutions with
-            Finetunai Studios comprehensive fine-tuning platform. Access
+            FineTunAI Studios comprehensive fine-tuning platform. Access
             leading models, powerful infrastructure, and transparent pricing.
           </p>
           <div className="pt-2 sm:pt-4">
