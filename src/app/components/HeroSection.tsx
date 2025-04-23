@@ -64,7 +64,7 @@ export default function ProductOverview() {
               Learn More
             </button>
           </Link>
-          <Link href="#wishlist">
+          <Link href="/AIStudio">
             <button className="w-full cursor-pointer sm:w-auto text-xs sm:text-sm md:text-base bg-indigo-100/10 text-white hover:bg-indigo-700/10 transition-all duration-200 px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-2xl sm:rounded-3xl font-semibold shadow-sm hover:shadow-md">
               Join Wishlist
             </button>
